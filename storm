@@ -40,7 +40,7 @@ def local_ip
         begin
             s.connect '192.168.1.1', 1
         rescue
-            s.connect '172.0.0.1', 1
+            s.connect '127.0.0.1', 1
         end
         s.addr.last
     end
@@ -57,7 +57,6 @@ location = Array[]
 pwd = 0
 
 system("clear")
-puts ""
 system("cat banner/banner.txt")
 puts ""
 puts "Storm Framework v1.0"
