@@ -23,7 +23,7 @@
  </a>
 </p>
 
-![storm](https://user-images.githubusercontent.com/54115104/85233399-801ac000-b40e-11ea-8d09-b1d8b9ecc43e.png)
+![storm](https://user-images.githubusercontent.com/54115104/86487301-63637e00-bd66-11ea-8a10-d6fcd32e6515.png)
 
 ***
 
@@ -91,7 +91,7 @@ Framework that supports secure SSL connection
 and other useful functions.
 ```
 
-![stormcat](https://user-images.githubusercontent.com/54115104/85233393-7abd7580-b40e-11ea-9b00-74a805241864.png)
+![stormcat](https://user-images.githubusercontent.com/54115104/86487307-68283200-bd66-11ea-9f5a-cd5599fe358a.png)
 
 ***
     
