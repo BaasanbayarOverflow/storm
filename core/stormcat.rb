@@ -2,6 +2,10 @@
 
 require 'optparse'
 
+Signal.trap("INT") { 
+    abort()
+}
+
 class StormCat
     def initialize
         require 'ostruct'
