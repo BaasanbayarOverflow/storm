@@ -13,10 +13,6 @@ r = "\033[1;77m[#] \033[0m"
 require 'readline'
 require 'socket'
 
-Signal.trap("INT") { 
-    abort()
-}
-
 lhost = ""
 lport = ""
 
@@ -50,7 +46,11 @@ puts "--------------------"
 puts ""
 
 loop do
-c = Readline.readline("\033[4mstorm\033[0m> ", true).chomp.split()
+begin
+    c = Readline.readline("\033[4mstorm\033[0m> ", true).chomp.split()
+rescue Exception
+    abort()
+end
 if c == []
     nil
 elsif c[0] == "exit"
@@ -115,7 +115,11 @@ elsif c[0] == "use"
             loop do
                 type = location[pwd][0..location[pwd].index('/')][0..-2]
                 ifraw = location[pwd]
-                ui = Readline.readline("\033[4mstorm\033[0m(\033[1;31m#{location[pwd]}\033[0m)> ", true).chomp.split()
+                begin
+                    ui = Readline.readline("\033[4mstorm\033[0m(\033[1;31m#{location[pwd]}\033[0m)> ", true).chomp.split()
+                rescue Exception
+                    abort()
+                end
                 if ui == []
                     nil
                 elsif ui[0] == "help"
@@ -329,20 +333,32 @@ elsif c[0] == "use"
                             if lhost == "" or lport == ""
                                 puts "#{e}Failed to generate payload!"
                             else
-                                system("ruby modules/#{location[pwd]}.rb --local-host=#{lhost} --local-port=#{lport}")
+                                begin
+                                    system("ruby modules/#{location[pwd]}.rb --local-host=#{lhost} --local-port=#{lport}")
+                                rescue Exception
+                                    nil
+                                end
                             end
                         else
                             if lhost == "" or lport == "" or output == ""
                                 puts "#{e}Failed to create payload!"
                             else
-                                system("ruby modules/#{location[pwd]}.rb --local-host=#{lhost} --local-port=#{lport} --output-path=#{output}")
+                                begin
+                                    system("ruby modules/#{location[pwd]}.rb --local-host=#{lhost} --local-port=#{lport} --output-path=#{output}")
+                                rescue Exception
+                                    nil
+                                end
                             end
                         end
                     else
                         if lhost == "" or lport == ""
                             puts "#{e}Failed to start listener!"
                         else
-                            system("ruby modules/#{location[pwd]}.rb --local-host=#{lhost} --local-port=#{lport}")
+                            begin
+                                system("ruby modules/#{location[pwd]}.rb --local-host=#{lhost} --local-port=#{lport}")
+                            rescue Exception
+                                nil
+                            end
                         end
                     end
                 else
