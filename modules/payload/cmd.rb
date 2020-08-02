@@ -11,6 +11,10 @@ r = "\033[1;77m[#] \033[0m"
 require 'optparse'
 require 'ostruct'
 
+Signal.trap("INT") {
+    abort()
+}
+
 options = OpenStruct.new
 OptionParser.new do |opt|
     opt.on('-l', '--local-host <local_host>', 'Local host.') { |o| options.local_host = o }
@@ -22,14 +26,12 @@ OptionParser.new do |opt|
         puts "  -h, --help                     Show options."
         puts "  --local-host=<local_host>      Local host."
         puts "  --local-port=<local_port>      Local port."
-        # Storm does not require target_shell
         abort()
     end
 end.parse!
 
 host = options.local_host
 port = options.local_port
-# Storm does not require target_shell
 
 if not host or not port
     puts "Usage: cmd.rb [-h] --local-host=<local_host> --local-port=<local_port>"
@@ -37,7 +39,6 @@ if not host or not port
     puts "  -h, --help                     Show options."
     puts "  --local-host=<local_host>      Local host."
     puts "  --local-port=<local_port>      Local port."
-    # Storm does not require target_shell
     abort()
 end
   

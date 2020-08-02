@@ -11,12 +11,15 @@ r = "\033[1;77m[#] \033[0m"
 require 'optparse'
 require 'ostruct'
 
+Signal.trap("INT") {
+    abort()
+}
+
 options = OpenStruct.new
 OptionParser.new do |opt|
     opt.on('-l', '--local-host <local_host>', 'Local host.') { |o| options.local_host = o }
     opt.on('-p', '--local-port <local_port>', 'Local port.') { |o| options.local_port = o }
     opt.on('-o', '--output-path <output_path>', 'Output path.') { |o| options.output_path = o }
-    # Storm does not require target_shell
     opt.on('-h', '--help', "Show options.") do
         puts "Usage: pascal.rb [-h] --local-host=<local_host> --local-port=<local_port>"
         puts "                 --target-shell=<target_shell> --output-path=<output_path>"
@@ -24,7 +27,6 @@ OptionParser.new do |opt|
         puts "  -h, --help                     Show options."
         puts "  --local-host=<local_host>      Local host."
         puts "  --local-port=<local_port>      Local port."
-        # Storm does not require target_shell
         puts "  --output-path=<output_path>    Output path."
         abort()
     end
@@ -32,7 +34,6 @@ end.parse!
 
 host = options.local_host
 port = options.local_port
-# Storm does not require target_shell
 file = options.output_path
 
 if not host or not port or not file
@@ -42,7 +43,6 @@ if not host or not port or not file
     puts "  -h, --help                     Show options."
     puts "  --local-host=<local_host>      Local host."
     puts "  --local-port=<local_port>      Local port."
-    # Storm does not require target_shell
     puts "  --output-path=<output_path>    Output path."
     abort()
 end

@@ -2,6 +2,10 @@
 
 require 'optparse'
 
+Signal.trap("INT") {
+    abort()
+}
+
 class StormCat
     def initialize
         require 'ostruct'
@@ -11,7 +15,7 @@ class StormCat
 
     def listener(port=31337, hostaddress=nil, ip=nil)
         i = "\033[1;77m[i] \033[0m"
-e = "\033[1;31m[-] \033[0m"
+        e = "\033[1;31m[-] \033[0m"
         p = "\033[1;77m[>] \033[0m"
         g = "\033[1;34m[*] \033[0m"
         s = "\033[1;32m[+] \033[0m"
