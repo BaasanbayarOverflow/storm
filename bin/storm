@@ -75,6 +75,11 @@ mv modules/payload/csharp.rb etc/.disabled
 mv etc/modules/payload/csharp.rb ~/storm/modules/payload
 cp etc/.disabled/csharp.rb etc
 rm -rf etc/.disabled
+mkdir etc/.disabled
+mv modules/payload/powershell.rb etc/.disabled
+mv etc/modules/payload/powershell.rb ~/storm/modules/payload
+cp etc/.disabled/powershell.rb etc
+rm -rf etc/.disabled
 } &> /dev/null
 chmod +x storm
 ./storm
@@ -144,6 +149,11 @@ mkdir etc/.disabled
 mv modules/payload/csharp.rb etc/.disabled
 mv etc/modules/payload/csharp.rb ~/storm/modules/payload
 cp etc/.disabled/csharp.rb etc
+rm -rf etc/.disabled
+mkdir etc/.disabled
+mv modules/payload/powershell.rb etc/.disabled
+mv etc/modules/payload/powershell.rb ~/storm/modules/payload
+cp etc/.disabled/powershell.rb etc
 rm -rf etc/.disabled
 } &> /dev/null
 else
@@ -221,6 +231,11 @@ mkdir etc/.disabled
 mv modules/payload/csharp.rb etc/.disabled
 mv etc/modules/payload/csharp.rb ~/storm/modules/payload
 cp etc/.disabled/csharp.rb etc
+rm -rf etc/.disabled
+mkdir etc/.disabled
+mv modules/payload/powershell.rb etc/.disabled
+mv etc/modules/payload/powershell.rb ~/storm/modules/payload
+cp etc/.disabled/powershell.rb etc
 rm -rf etc/.disabled
 } &> /dev/null
 if [[ ! -d ~/storm ]]
@@ -300,6 +315,11 @@ mkdir etc/.disabled
 mv modules/payload/csharp.rb etc/.disabled
 mv etc/modules/payload/csharp.rb ~/storm/modules/payload
 cp etc/.disabled/csharp.rb etc
+rm -rf etc/.disabled
+mkdir etc/.disabled
+mv modules/payload/powershell.rb etc/.disabled
+mv etc/modules/payload/powershell.rb ~/storm/modules/payload
+cp etc/.disabled/powershell.rb etc
 rm -rf etc/.disabled
 fi
 } &> /dev/null
