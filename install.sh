@@ -65,7 +65,7 @@ sleep 0
 else
 cd ~
 {
-git clone https://github.com/entynetproject/storm.git
+git clone https://github.com/EntySec/storm.git
 } &> /dev/null
 fi
 

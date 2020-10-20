@@ -41,7 +41,7 @@ rm /bin/storm
 rm /usr/local/bin/storm
 rm /data/data/com.termux/files/usr/bin/storm
 cd ~
-git clone https://github.com/entynetproject/storm.git
+git clone https://github.com/EntySec/storm.git
 if [[ "$UPD" != "true" ]]
 then
 sleep 0

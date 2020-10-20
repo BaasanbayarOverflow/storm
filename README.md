@@ -3,23 +3,23 @@
 <h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/91619945-3b278280-e997-11ea-8fea-e115a9cfc004.png" alt="logo" height="250px"></h3>
 
 <p align="center">
-  <a href="http://entynetproject.simplesite.com/">
-    <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
+  <a href="http://EntySec.simplesite.com/">
+    <img src="https://img.shields.io/badge/EntySec-Ivan%20Nikolsky-blue.svg">
   </a> 
-  <a href="https://github.com/entynetproject/storm/releases">
-    <img src="https://img.shields.io/github/release/entynetproject/storm.svg">
+  <a href="https://github.com/EntySec/storm/releases">
+    <img src="https://img.shields.io/github/release/EntySec/storm.svg">
   </a>
   <a href="https://wikipedia.org/wiki/Ruby_(programming_language)">
     <img src="https://img.shields.io/badge/language-ruby-red.svg">
  </a>
-  <a href="https://github.com/entynetproject/storm/issues?q=is%3Aissue+is%3Aclosed">
-      <img src="https://img.shields.io/github/issues/entynetproject/storm.svg">
+  <a href="https://github.com/EntySec/storm/issues?q=is%3Aissue+is%3Aclosed">
+      <img src="https://img.shields.io/github/issues/EntySec/storm.svg">
   </a>
-  <a href="https://github.com/entynetproject/storm/wiki">
+  <a href="https://github.com/EntySec/storm/wiki">
       <img src="https://img.shields.io/badge/wiki%20-storm-lightgrey.svg">
  </a>
-  <a href="https://twitter.com/entynetproject">
-    <img src="https://img.shields.io/badge/twitter-entynetproject-blue.svg">
+  <a href="https://twitter.com/EntySec">
+    <img src="https://img.shields.io/badge/twitter-EntySec-blue.svg">
  </a>
 </p>
 
