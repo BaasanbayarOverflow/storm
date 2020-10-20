@@ -3,7 +3,7 @@
 <h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/91619945-3b278280-e997-11ea-8fea-e115a9cfc004.png" alt="logo" height="250px"></h3>
 
 <p align="center">
-  <a href="http://EntySec.simplesite.com/">
+  <a href="http://entysec.netlify.app/">
     <img src="https://img.shields.io/badge/EntySec-Ivan%20Nikolsky-blue.svg">
   </a> 
   <a href="https://github.com/EntySec/storm/releases">
