@@ -3,7 +3,7 @@
 <h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/91619945-3b278280-e997-11ea-8fea-e115a9cfc004.png" alt="logo" height="250px"></h3>
 
 <p align="center">
-  <a href="http://entysec.netlify.app/">
+  <a href="http://EntySec.simplesite.com/">
     <img src="https://img.shields.io/badge/EntySec-Ivan%20Nikolsky-blue.svg">
   </a> 
   <a href="https://github.com/EntySec/storm/releases">
@@ -29,7 +29,9 @@
 
 # About Storm Framework
 
-Storm Framework is a Windows post-exploitation framework that exploits Windows PowerShell vulnerability to get shell-like connection. Storm Framework has the ability to generate simple payloads to provide Windows PowerShell attack. 
+    Storm Framework is a Windows post-exploitation framework that exploits Windows 
+    PowerShell vulnerability to get shell-like connection. Storm Framework has the 
+    ability to generate simple payloads to provide Windows PowerShell attack. 
 
 ***
 
@@ -55,7 +57,10 @@ Storm Framework is a Windows post-exploitation framework that exploits Windows P
 
 # Storm Framework execution
 
-To execute Storm Framework you should execute the following command.
+```
+To execute Storm Framework you
+should execute the following command.
+```
 
 > storm
       
@@ -65,15 +70,26 @@ To execute Storm Framework you should execute the following command.
 
 * Simple and clear UX/UI.
 
-Storm Framework has a simple and clear UX/UI. It is easy to understand and it will be easier for you to master the Storm Framework.
+```
+Storm Framework has a simple and clear UX/UI. 
+It is easy to understand and it will be easier 
+for you to master the Storm Framework.
+```
 
 * A lot of different payloads.
 
-There are a lot of different payloads in Storm Framework such as Batch, PowerShell and C# payloads.
+```
+There are a lot of different payloads in Storm 
+Framework such as Batch, PowerShell and C# payloads.
+```
 
 * Powerful StormCat listener.
 
-There is a powerful StormCat listener in Storm Framework that supports secure SSL connection and other useful functions.
+```
+There is a powerful StormCat listener in Storm 
+Framework that supports secure SSL connection 
+and other useful functions.
+```
 
 ![stormcat](https://user-images.githubusercontent.com/54115104/86487307-68283200-bd66-11ea-9f5a-cd5599fe358a.png)
 
@@ -81,4 +97,8 @@ There is a powerful StormCat listener in Storm Framework that supports secure SS
     
 # Storm Framework disclaimer
 
-Usage of the Storm Framework for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state, federal, and international laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+```
+Usage of the Storm Framework for attacking targets without prior mutual consent is illegal.
+It is the end user's responsibility to obey all applicable local, state, federal, and international laws.
+Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+```
