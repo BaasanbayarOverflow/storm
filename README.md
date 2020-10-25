@@ -37,7 +37,7 @@
 
 # Getting started
 
-# Storm installation
+## Storm installation
 
 > cd storm
 
@@ -45,7 +45,7 @@
 
 > ./install.sh
 
-# Storm uninstallation
+## Storm uninstallation
 
 > cd storm
 
